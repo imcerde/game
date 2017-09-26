@@ -4,7 +4,7 @@ int main(void)
 	int a,b,c;
 	int f=0;
     int	i=0;
-	printf("请输入两个数：");
+	printf("Please insert two munbers:");
 	scanf("%d%d",&a,&b);
 	while(a>b||a%b!=0)
 	{
