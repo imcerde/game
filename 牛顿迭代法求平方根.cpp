@@ -2,7 +2,7 @@
 int main(void){
 	double a,x;
 	printf("Please insert the number that you want to root:");
-	scanf("%lf",&a,&x);
+	scanf("%lf",&a);
 	if(a==0){
 		printf("The answer is 0.");
 	}	
