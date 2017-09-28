@@ -4,9 +4,9 @@ int main(void)
 	int a,b,c;
 	int f=0;
     int	i=0;
-	printf("please insert two munbers£º");
+	printf("please insert two munbersÂ£Âº");
 	scanf("%d%d",&a,&b);
-	while(a>b)
+	while(a>=b)
 	{
 		c=a%b;
 		a=a/b;
