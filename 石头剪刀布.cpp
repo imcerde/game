@@ -5,32 +5,32 @@ int main(void) {
 Label_3:int a=0;
 int b=0;
 int c=0;
-int i,j,k;
-printf("                                 ÎŞÁÄµÄÊ¯Í·¼ôµ¶²¼ÓÎÏ·\n"); 
-Label_1:printf("ÄãÑ¡Ôñ³ö£º\n");
-printf("1.Ê¯Í·	2.¼ôµ¶	3.²¼\n");
-scanf("%d",&i);
-srand((unsigned int)time(NULL));/*srand((unsigned int)_getpid()); µÃµ½µ±Ç°½ø³ÌÊı*/ 
+int i=2ï¼›
+int j,k;
+printf("                                 æ— èŠçš„çŸ³å¤´å‰ªåˆ€å¸ƒæ¸¸æˆ\n"); 
+Label_1:printf("ä½ é€‰æ‹©å‡ºï¼š\n");
+printf("1.çŸ³å¤´	2.å‰ªåˆ€	3.å¸ƒ\n");
+srand((unsigned int)time(NULL));/*srand((unsigned int)_getpid()); å¾—åˆ°å½“å‰è¿›ç¨‹æ•°*/ 
 j=rand() % 3;
 if(i==j){
-	printf("Æ½¾Ö!\n");
+	printf("å¹³å±€!\n");
 	c+=1;
 }
 else if(i<j){
-	printf("ÄãÊäÁË£¡\n");
+	printf("ä½ è¾“äº†ï¼\n");
 	b+=1;
 }
 else if(i>j){
-	printf("ÄãÓ®ÁË£¡\n");
+	printf("ä½ èµ¢äº†ï¼\n");
 	a+=1;
 }
-Label_2:printf("1.¼ÌĞø	2.²éÑ¯±È·Ö	3.ÖØĞÂ¿ªÊ¼	4.½áÊøÓÎÏ·\n");
+Label_2:printf("1.ç»§ç»­	2.æŸ¥è¯¢æ¯”åˆ†	3.é‡æ–°å¼€å§‹	4.ç»“æŸæ¸¸æˆ\n");
 scanf("%d",&k);
 if(k==1){
 	goto Label_1; 
 }
 else if(k==2){
-	printf("Ó®£º%d	Êä£º%d	Æ½:%d\n",a,b,c);
+	printf("èµ¢ï¼š%d	è¾“ï¼š%d	å¹³:%d\n",a,b,c);
 	goto Label_2; 
 } 
 else if(k==3){
@@ -38,10 +38,10 @@ else if(k==3){
 }
 else{
 	if(a>b){
-		printf("²ÅÓ®Õâ¼¸°Ñ£¬»¹ºÃÒâË¼½áÊø£¡"); 
+		printf("æ‰èµ¢è¿™å‡ æŠŠï¼Œè¿˜å¥½æ„æ€ç»“æŸï¼"); 
 	}
 	else if(a<=b){
-		printf("¼òµ¥µçÄÔ¶¼´ò²»¹ı£¬»¹ÊÇºÃºÃÑ§Ï°°É£¡"); 
+		printf("ç®€å•ç”µè„‘éƒ½æ‰“ä¸è¿‡ï¼Œè¿˜æ˜¯å¥½å¥½å­¦ä¹ å§ï¼"); 
 	}
 	
 }
